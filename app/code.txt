@@ -1,0 +1,63 @@
+//        String builder
+        final StringBuilder result = new StringBuilder("");
+        Arrays.stream(strings).forEach(s -> {
+            result.append(s);
+        });
+
+//------------------------------------------------------------------
+
+//         Wild Card
+
+ public class Building{
+
+     @Override
+     public String toString(){
+      return "Building";
+     }
+ }
+ public class Office extends{
+
+      @Override
+      public String toString(){
+       return "Office";
+      }
+  }
+
+  public void getBuildings(List<? extends Buildings> buildings){
+                  return buildings;
+  }
+  public void getOffices(List<? super Offices> offices){
+                    return buildings;
+    }
+
+
+//    Comparable and Comparator
+
+public class Human implements Comparable<Human>{
+String name;
+int age;
+@Override
+public int compareTo(Human h2){
+if(this.age> h2.age)
+return 1;
+else
+ return -1;
+}
+}
+List<Human> humans = new ArrayList<>();
+human.add()...
+Collection.sort(humans);
+
+Comparator<Human> hc = new Comparator<Human>(){
+                                @Override
+                                public int compare(Human h,Human h2){
+                                if(h.name.length()>h1.name.length())
+                                return 1;
+                                else return -1;
+                                }
+                                    }
+Collection.sort(humans,hc);
+
+
+
+

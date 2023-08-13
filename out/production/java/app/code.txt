@@ -1,0 +1,33 @@
+//        String builder
+        final StringBuilder result = new StringBuilder("");
+        Arrays.stream(strings).forEach(s -> {
+            result.append(s);
+        });
+
+//------------------------------------------------------------------
+
+//         Wild Card
+
+ public class Building{
+
+     @Override
+     public String toString(){
+      return "Building";
+     }
+ }
+ public class Office extends{
+
+      @Override
+      public String toString(){
+       return "Office";
+      }
+  }
+
+  public void getBuildings(List<? extends Buildings> buildings){
+                  return buildings;
+  }
+  public void getOffices(List<? super Offices> offices){
+                    return buildings;
+    }
+
+
