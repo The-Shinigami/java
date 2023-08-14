@@ -11,7 +11,7 @@ public class ProblemsImpl implements Problems{
     @Override
     public boolean checkPalindrom(char [] word){
         if (word == null)
-            return false;
+            throw new NullPointerException("the string is null");
 
         for(int i=0;i<word.length/2;i++){
             if (word[i] != word[word.length-1-i]) {
